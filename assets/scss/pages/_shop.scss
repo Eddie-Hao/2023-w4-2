@@ -1,0 +1,29 @@
+.shop {
+    &-map {
+        width: 100%;
+        height: 414px;
+
+        @media (max-width:767px) {
+            height: 208px;
+        }
+    }
+}
+
+.shop-card {
+
+    // <992時 店鋪資訊卡片分為雙欄
+    @media (max-width:992px) {
+        width: calc(50% - 12px);
+    }
+
+    // <7667時 變回單攔滿版
+    @media (max-width:767px) {
+        width: 100%;
+    }
+
+    // 店鋪資訊卡片的圖片寬度滿版
+    &-img {
+        width: 100%;
+        height: 224px;
+    }
+}

@@ -1,0 +1,98 @@
+@media (max-width: 1320px) {
+    .product-menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.product-menu-item {
+    width: calc(100% / 3);
+    border-left: 1px solid $gray-300;
+
+    &:last-child {
+        border-right: 1px solid $gray-300;
+    }
+}
+
+.product-menu-link {
+    // 固定高度，讓border可以使用 box-sizing:border-box
+    height: 96px;
+    display: block;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+        background-color: $secondary;
+    }
+
+    &.active {
+        border-bottom: 8px solid $primary;
+    }
+
+    @media (max-width: 992px) {
+        height: 68px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (max-width: 767px) {
+        height: 56px;
+    }
+}
+
+.product-banner {
+    width: 50%;
+    height: 296px;
+    background-position: center center;
+    background-size: cover;
+
+    &-glasses {
+        &-optical {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+        }
+        &-sunglasses{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+        }
+    }
+
+    &-modal {
+        &-optical {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+        }
+        &-sunglasses{
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: 136px;
+
+        &-glasses {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+        }
+
+        &-modal {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+        }
+    }
+}
+
+.product-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    @media (max-width: 772px) {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+}
+
+.palette {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}

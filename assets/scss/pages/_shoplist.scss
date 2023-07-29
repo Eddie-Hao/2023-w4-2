@@ -1,0 +1,5 @@
+// .card-item 使用flex，設定讓圖片固定尺寸
+.shoplist-img{
+    height: 224px;
+    flex-shrink: 0;
+}

@@ -1,3 +1,141 @@
-.index-title {
-  font-size: 100px;
+.hero {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  @media (max-width:767px) {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    background-position: left center;
+  }
+
+  &-content {
+    padding-top: 296px;
+    padding-bottom: 295px;
+
+    @media (max-width:767px) {
+      padding-top: 145px;
+      padding-bottom: 145px;
+    }
+  }
+
+  &-cta {
+    padding: 6px 12px;
+    color: $white;
+    background: $primary;
+
+    &:hover {
+      background: $primary-darkest;
+    }
+  }
+}
+
+.advantage {
+  &-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &-item {
+    height: 100%;
+  }
+}
+
+.classic-item {
+  &-link {
+    display: block;
+    color: $primary;
+  }
+
+  &:hover {
+    .classic-item-link {
+      color: $primary-darkest;
+    }
+  }
+}
+
+.signature {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-position: center center;
+  background-size: cover;
+
+  &-item {
+    width: 50%;
+    text-align: center;
+
+    &:hover .signature-title {
+      background-color: $gray-100;
+      color: $primary-darkest;
+    }
+
+    @media (max-width:992px) {
+      width: 100%;
+    }
+  }
+
+
+  &-title {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: $white;
+    color: $primary;
+  }
+
+  &-photo {
+    height: 240px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-position: center center;
+    background-size: cover;
+
+    &-doubleA {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true);
+
+      @media (max-width:767px) {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true);
+      }
+    }
+
+    &-youth {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
+
+      @media (max-width:767px) {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true);
+      }
+    }
+
+  }
+
+}
+
+.recommand-card-item {
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
+
+  &-body {
+    height: 208px;
+    padding: 16px;
+  }
+
+  &:hover {
+    .recommand-card-item-img {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+}
+
+.contact {
+  padding-top: 80px;
+  padding-bottom: 96px;
+
+  @media (max-width:992px) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width:767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

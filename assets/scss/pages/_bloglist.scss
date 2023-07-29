@@ -1,0 +1,54 @@
+.bloglist-img{
+    @media (max-width:767px) {
+        width: 100%;
+        height: 208px;
+        object-fit: cover;
+    }
+}
+.bloglist-content {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    // more 文字hover,active
+    &:hover {
+        & .bloglist-link-lg {
+            color: $primary;
+        }
+    }
+
+    &:active {
+        & .bloglist-link-sm {
+            color: $primary;
+        }
+    }
+}
+
+.bloglist-text {
+    color: $gray-600;
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+// more 文字切換
+.bloglist-link {
+    &-sm {
+        display: none;
+
+        @media (max-width:992px) {
+            display: inline-block;
+
+        }
+    }
+
+    &-lg {
+        align-self: flex-end;
+        display: block;
+
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
+}

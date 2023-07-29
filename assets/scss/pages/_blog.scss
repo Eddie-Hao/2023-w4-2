@@ -1,0 +1,98 @@
+.blog {
+    padding-top: 24px;
+    padding-bottom: 80px;
+
+    @media (max-width: 992px) {
+        padding-top: 8px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 64px;
+    }
+}
+
+.blog-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:767px) {
+        width: 100%;
+    }
+
+    &-item {
+        @media (max-width:767px) {
+            width: 25%;
+        }
+    }
+
+    &-link {
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: $white;
+
+        &:hover {
+            color: $gray-200;
+        }
+
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    }
+
+    &-icon {
+
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+}
+
+.tag {
+    @media (max-width:767px) {
+        display: none;
+    }
+
+    &-link {
+        color: $primary;
+
+        &:hover {
+            color: $primary-darkest;
+        }
+    }
+}
+
+//連結到網頁外部
+.blog-outer {
+    @media (max-width:767px) {
+        display: none;
+    }
+
+    &-share {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $black;
+
+        &-btn {
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            &:hover,
+            &:active {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    // 按鈕- 上一篇/下一篇
+    &-btn {
+        color: $black;
+
+        &:hover,
+        &:active {
+            color: $primary;
+        }
+    }
+}

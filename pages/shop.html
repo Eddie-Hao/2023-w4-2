@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3-眼鏡官網</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google icon -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+        rel="stylesheet">
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+    <!-- 內容區開始 -->
+    <div class="container p-xl">
+        <h3 class="title h2 fs-1-sm fw-bold mb-8 mb-6-sm">門市據點</h3>
+        <div class="row mb-10 mb-6-sm">
+            <div class="col-4 col-7-md col-12-sm d-flex align-item">
+                <label for="shop-name" class="fs-1 fs-base-sm mr-2">選擇分店</label>
+                <select id="shop-name" class="select">
+                    <option value="台北中山旗艦店">台北中山旗艦店</option>
+                    <option value="台北綠園店">台北綠園店</option>
+                    <option value="台中清水旗艦店">台中清水旗艦店</option>
+                    <option value="高雄中正形象店">高雄中正形象店</option>
+                    <option value="高雄夢時代店">高雄夢時代店</option>
+                </select>
+            </div>
+        </div>
+        <div class="row text-gray-800 flex-wrap-md">
+            <div class="col-5 col-12-md mb-6-md">
+                <div class="card-item flex-row-md justify-between-md flex-column-sm">
+                    <div class="card-item-img shop-card">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                            alt="台北中山旗艦店" class="shop-card-img">
+                    </div>
+                    <div class="card-item-border shop-card">
+                        <h1 class="card-item-title fs-1">台北中山旗艦店</h1>
+                        <div class="card-item-body">
+                            <p class="fs-2 mb-2">
+                                <span class="material-icons-outlined vertical-middle mr-2">call</span>
+                                電話：(02)000-1234
+                            </p>
+                            <p class="fs-2 mb-2">
+                                <span class="material-icons-outlined vertical-middle mr-2">schedule</span>
+                                營業時間：10:00-21:00
+                            </p>
+                            <p class="fs-2">
+                                <span class="material-icons-outlined vertical-middle mr-2">place</span>
+                                地址：台北市中山區南京東路25巷2-1號
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-7 col-12-md">
+                <iframe class="shop-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.011610659688!2d121.56230817613316!3d25.033680038302997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6e9d93249%3A0xd508f7b3aa02d931!2z5Y-w5YyXMTAx6KeA5pmv5Y-w!5e0!3m2!1szh-TW!2stw!4v1690185470863!5m2!1szh-TW!2stw"
+                    style="border:0;" allowfullscreen="1" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- 內容區結束 -->
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

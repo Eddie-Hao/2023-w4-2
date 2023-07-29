@@ -1,0 +1,70 @@
+// 表單 - index
+.form {
+    &-title {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &-content {
+        width: 100%;
+        padding: 6px 12px;
+
+        &::placeholder {
+            color: $black;
+            opacity: 0.2;
+        }
+    }
+
+    &-button {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        padding: 16px 176px;
+        background-color: $primary;
+        
+        &:hover,&:active {
+            background-color: $primary-darkest;
+        }
+
+        @media (max-width: 992px) {
+            padding-left: 136px;
+            padding-right: 136px;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+
+    &-check-title{
+        display: inline-block;
+        line-height: 1.5;
+        vertical-align: middle;
+    }
+    &-check{
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        flex-shrink: 0;
+    }
+}
+
+// 下拉選單 - shoplist / shop
+.select{
+    padding: 5.5px 12px;
+    // 100% - label寬度 - margin-right寬度
+    width: calc(100% - 112px);
+    font-size: $fs-3;
+    border: 1px solid $gray-400;
+    color: $gray-700;
+    
+    // 下拉樣式取消
+    appearance: none;
+    // 變更下拉icon
+    background-image: url(https://lurl.cc/qsS3pb);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+
+    @media (max-width:767px) {
+        width: calc(100% - 80px);
+    }
+}
