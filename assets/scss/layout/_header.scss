@@ -1,0 +1,41 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  width: 80px;
+  height: 48px;
+  display: block;
+}
+
+.menu-link {
+  color: $white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &:hover {
+      color: $gray-200;
+  }
+}
+
+.sm-menu {
+
+  &-item {
+      width: 50%;
+      border: 1px solid $white
+  }
+
+  &-link {
+      display: block;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      color: $white;
+
+      &:hover {
+          background-color: $white;
+          color: $primary;
+      }
+  }
+}

@@ -1,0 +1,15 @@
+// display
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+@media (max-width: 767px) {
+    .d-none-sm{
+        display: none;
+    }
+    .d-block-sm{
+        display: block;
+    }
+}

@@ -1,0 +1,83 @@
+.h1{
+    font-size: $display-1;
+}
+.h2{
+    font-size: $display-2;
+}
+.h3{
+    font-size: $display-3;
+}
+.h4{
+    font-size: $display-4;
+}
+.h5{
+    font-size: $display-5;
+}
+.fs-1{
+    font-size: $fs-1;
+}
+.fs-2{
+    font-size: $fs-2;
+}
+.fs-3{
+    font-size: $fs-3;
+}
+.fs-4{
+    font-size: $fs-4;
+}
+.fs-base{
+    font-size: 16px;
+}
+@media (max-width:992px) {
+    .fs-1-md{
+        font-size: $fs-1;
+    }
+    .fs-base-md{
+        font-size: 16px;
+    }
+}
+@media (max-width:767px) {
+    .fs-1-sm{
+        font-size: $fs-1;
+    }
+    .fs-base-sm{
+        font-size: 16px;
+    }
+}
+// 字重
+.fw-med{
+    font-weight: 500;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-black{
+    font-weight: 900;
+}
+.fw-black-italic{
+    font-weight: 900;
+    font-style: italic;
+}
+
+// 文字顏色
+.text-white{
+    color: $white;
+}
+.text-black{
+    color: $black;
+}
+.text-primary{
+    color: $primary;
+}
+.text-primary-darkest{
+    color: $primary-darkest;
+}
+.text-gray-500{
+    color: $gray-500;
+}
+.text-gray-600{
+    color: $gray-600;
+}
+.text-gray-800{
+    color: $gray-800;
+}

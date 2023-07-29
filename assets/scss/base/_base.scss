@@ -1,0 +1,29 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;   
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+    // @media (max-width:992px) {
+    //     max-width: 720px;
+    // }
+
+    // @media (max-width:767px) {
+    //     max-width: 372px;
+    // }
+}

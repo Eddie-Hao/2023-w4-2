@@ -1,0 +1,41 @@
+//背景色
+.bg-primary{
+    background-color: $primary;
+}
+.bg-primary-darkest{
+    background-color: $primary-darkest;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-tertiary{
+    background-color: $tertiary;
+}
+.bg-tertiary-l{
+    background-color: $tertiary-light;
+}
+.bg-black{
+    background-color: $black;
+}
+//垂直對齊
+.vertical-middle{
+    vertical-align: middle;
+}
+//水平對齊
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+//icon垂直對齊
+.icon-link{
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+// 頁面標題
+.title{
+    border-left: 8px solid $primary-dark;
+    padding-left: 16px;
+}
