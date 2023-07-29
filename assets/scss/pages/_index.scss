@@ -1,11 +1,11 @@
 .hero {
-  background-image: url(../../assets/images/home-header.png);
+  background-image: url(../assets/images/home-header.png);
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
 
   @media (max-width:767px) {
-    background-image: url(../../assets/images/home-header-sm.png);
+    background-image: url(../assets/images/home-header-sm.png);
     background-position: left center;
   }
 
